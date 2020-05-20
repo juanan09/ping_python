@@ -4,10 +4,14 @@ import platform
 import subprocess
 import socket as sc
 
+#Averiguamos el sistema operativo
 sistemas_operativo = platform.system().lower()
 print(sistemas_operativo)
 
+#Obtenemos el nombre del host
 hostName = sc.gethostname()
+
+#Direccion IP
 direccion_IP = sc.gethostbyname(hostName)
 
 
